@@ -22,13 +22,11 @@ public class Helado{
         this.sabor=sabor;
         this.precioParcial = 7.85;
     }
-    
-    public double calcularPrecioFinal(){
-        double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
-        return precioFinal;
-    }
 
+    public double getPrecioParcial() {
+        return precioParcial;
+    }
+    
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
@@ -37,11 +35,5 @@ public class Helado{
     public String toString() {
         return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
-    
-    public String showPrecioFinal(){
-        return "Precio Final: $ " + calcularPrecioFinal();
-    }
-    
-    
     
 }
