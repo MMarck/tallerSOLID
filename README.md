@@ -31,12 +31,11 @@
 	Este principio plantea que las clases hijas puedan ser 
 	reemplazadas completamente por clases padre, en este caso las 
 	clases Helado y Pastel eran muy similares y se tuvo que crear 
-	una clase padre que mantuviera ese principio
+	una clase padre que mantuviera ese principio.   
 
 
 ## INTERFACE SEGREGATION PRINCIPLE
-	No parece que se incumpla este principio ya que todos las funciones abtractas
-	implementadas y usadas
+	No parece que se incumpla este principio ya que todas las funciones abstractas son implementadas y usadas. El principio nos menciona que es mejor tener varias interfaces especializadas en algo, en lugar de tener una muy generalizada. En este caso, las clases tenian padres que ya implementaban los metodos requeridos, por lo que no fue necesario crear una interface.
 
 ## DEPENDECY INVERSION PRINCIPLE
 	En cuanto a este principio, se puede traducir como una manera especifica de 
@@ -51,4 +50,7 @@
 ## Punto 5
 	Al descomentar las dos sentencias en el main se puede notar el error que se
 	lanza desde lecheDeslactosada, este error puede ser manejado desde la clase
-	manejador de leche
+	manejador de leche.
+
+## Punto 2 
+	En este punto se resuelve el principio de open/closed, puesto que no habría problema en caso de que se desee comenzar a vender otro postre. La clase Postre quedaria igual, y los cambios solo se darían en la nueva clase. 
