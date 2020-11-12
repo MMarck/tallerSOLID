@@ -22,7 +22,7 @@ public class ManejadorDeLeche {
         System.out.println(Pastel.class);
         if(postre.getClass() == Pastel.class){
         	if(leche.getClass() == LecheDeslactosada.class) {
-        		LecheDeslactosada lecheAuxiliar = new LecheDeslactosada();
+        		LecheDescremada lecheAuxiliar = new LecheDescremada();
         		lecheAuxiliar.usarPastel();
         	}else {
         		leche.usarPastel();
