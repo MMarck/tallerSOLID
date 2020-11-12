@@ -5,32 +5,19 @@
  */
 package Postres;
 
-import java.util.ArrayList;
-import Adicionales.Aderezo;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Helado{
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
-    
-    public Helado(String sabor){
-        aderezos= new ArrayList<>();
-        this.sabor=sabor;
-        this.precioParcial = 7.85;
-    }
+public class Helado extends Postre{
 
-    public double getPrecioParcial() {
-        return precioParcial;
-    }
-    
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
-    }
+	public Helado(String sabor) {
+		super(sabor, 7.85);
+		// TODO Auto-generated constructor stub
+	}
 
+    //esta sobreescritura realmente no es necesaria
     @Override
     public String toString() {
         return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';

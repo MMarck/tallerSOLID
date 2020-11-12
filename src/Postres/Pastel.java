@@ -5,33 +5,21 @@
  */
 package Postres;
 
-import java.util.ArrayList;
-import Adicionales.Aderezo;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Pastel{
-    private String sabor;
-    private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
-    
-    public Pastel(String sabor){
-        aderezos= new ArrayList<>();
-        this.sabor=sabor;
-        this.precioParcial = 15.55;
-    }
+public class Pastel extends Postre{
 
-    public double getPrecioParcial() {
-        return precioParcial;
-    }
-
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
-    }
+	public Pastel(String sabor) {
+		super(sabor, 15.55);
+		// TODO Auto-generated constructor stub
+	}
     
-    @Override
+	
+	//esta sobreescritura realmente no es necesaria
+	@Override
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }

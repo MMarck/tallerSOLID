@@ -31,6 +31,8 @@ public class Sistema {
         System.out.println(CalculadorPrecioFinal.showPrecioFinal(helado_vainilla));
         
         // Producir Pastel
+        //Postre parent =  new Pastel("Chocolate");
+        //Pastel pastel_chocolate = (Pastel)parent; prueba del principio Liskov
         Pastel pastel_chocolate = new Pastel("Chocolate");
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.CREMA);
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
