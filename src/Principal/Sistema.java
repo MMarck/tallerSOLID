@@ -18,8 +18,7 @@ public class Sistema {
         // a ambos agregarles CREMA y FRUTILLAS
         // y cambiar el tipo de leche por Leche Descremada
         // Finalmente mostrar el precio final de cada uno
-        LecheEntera lecheDL = new LecheDeslactosada();
-        LecheEntera lecheDC = new LecheDescremada();
+    	LecheEntera leche = new LecheDescremada();
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
         
         // Producir Helado
@@ -27,18 +26,19 @@ public class Sistema {
         OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
         OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
-//        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
+        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
         
         System.out.println(new CalculadorPrecioFinalHelado().showPrecioFinal(helado_vainilla));
         
         // Producir Pastel
-        //Postre parent =  new Pastel("Chocolate");
+        //Postre parent =  new Pastel("Chocolate"); prueba del principio Liskov
         //Pastel pastel_chocolate = (Pastel)parent; prueba del principio Liskov
         Pastel pastel_chocolate = new Pastel("Chocolate");
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.CREMA);
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
-        mnj_leche.cambiarTipoLeche(lecheDC, pastel_chocolate);
+        
+        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         System.out.println(new CalculadorPrecioFinalPastel().showPrecioFinal(pastel_chocolate));
         
         

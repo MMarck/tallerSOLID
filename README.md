@@ -3,6 +3,9 @@
 ## INTEGRANTES:
 	-- Wesley Briones
 	-- Marck Murillo
+	-- Angie Flores
+	-- Franklin Ordoñez
+	-- Joyce Rojas
 
 # SOLID
 
@@ -30,6 +33,18 @@
 	clases Helado y Pastel eran muy similares y se tuvo que crear 
 	una clase padre que mantuviera ese principio
 
+
 ## INTERFACE SEGREGATION PRINCIPLE
+	No parece que se incumpla este principio ya que todos las funciones abtractas
+	implementadas y usadas
 
 ## DEPENDECY INVERSION PRINCIPLE
+
+
+## punto 5
+	Al descomentar las dos sentencias en el main se puede notar el error que se
+	lanza desde lecheDeslactosada, este error puede ser manejado desde la clase
+	manejador de leche
+
+
+
