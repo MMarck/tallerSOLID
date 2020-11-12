@@ -15,6 +15,14 @@
 
 
 ## OPEN-CLOSED PRINCIPLE
+	Este principio dice qie las entidades: las clases, módulos,
+	funciones y objetos deben estar abiertos a extensión pero cerrados
+	para modificación. Se puede apreciar que todo el apartado de procesos
+	no sigue con este principio puesto que si se quiere agregar más postres 
+	habría que cambiar el código fuente de la clase CalculadorPrecioFinal
+	Entonces se hizo los cambios pertinentes para que se pueda extender la clase
+	sin cambiar el código fuente.
+
 
 ## LISTOV SUBTITUTION PRINCIPLE
 	Este principio plantea que las clases hijas puedan ser 
