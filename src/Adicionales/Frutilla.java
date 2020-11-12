@@ -7,15 +7,15 @@ package Adicionales;
 
 /**
  *
- * @author Pedro Mendoza
+ * @author FAMILY
  */
-
-public abstract class Aderezo {
-    public String nombre;
-    public abstract void setNombre();
-    public String toString() {
-        return nombre.toUpperCase();
+public class Frutilla extends Aderezo{
+    public Frutilla(){
+        setNombre();
     }
-    
-    
+
+    @Override
+    public void setNombre(){
+        nombre = "FRUTILLA";
+    }
 }

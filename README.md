@@ -15,7 +15,7 @@
 
 
 ## OPEN-CLOSED PRINCIPLE
-	Este principio dice qie las entidades: las clases, módulos,
+	Este principio dice que las entidades: las clases, módulos,
 	funciones y objetos deben estar abiertos a extensión pero cerrados
 	para modificación. Se puede apreciar que todo el apartado de procesos
 	no sigue con este principio puesto que si se quiere agregar más postres 
@@ -33,3 +33,10 @@
 ## INTERFACE SEGREGATION PRINCIPLE
 
 ## DEPENDECY INVERSION PRINCIPLE
+	En cuanto a este principio, se puede traducir como una manera especifica de 
+	desacoplar los modulos de un software, y se da a entender que aquellos modulos
+	de alto nivel no deben depender de los de bajo nivel, si no de abstracciones y 
+	de estas los detalles. Es lo que sucede en el punto 4 en donde la clase Aderezo
+	paso a ser estatica y las demas clases relacionadas, es decir las de bajo nivel
+	implementan metodos sobreescritos de la abstraccion mayor, es decir de la clase
+	Aderezo. Aqui vemos como se cumple el principio.
