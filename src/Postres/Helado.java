@@ -5,6 +5,8 @@
  */
 package Postres;
 
+import Adicionales.Aderezo;
+
 
 /**
  *
@@ -12,10 +14,18 @@ package Postres;
  */
 public class Helado extends Postre{
 
-	public Helado(String sabor) {
-		super(sabor, 7.85);
-		// TODO Auto-generated constructor stub
-	}
+    public Helado(String sabor) {
+	super(sabor, 7.85);
+    // TODO Auto-generated constructor stub
+    }
+        
+    public static void anadirAderezo(Helado helado,Aderezo aderezo){
+        helado.getAderezos().add(aderezo);
+    }
+    
+    public static void quitarAderezo(Helado helado,Aderezo aderezo){
+        helado.getAderezos().remove(aderezo);
+    }
 
     //esta sobreescritura realmente no es necesaria
     @Override

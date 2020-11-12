@@ -9,10 +9,13 @@ import Adicionales.Aderezo;
 import Postres.Pastel;
 import Postres.Helado;
 
+
+//ESTA CLASE YA NO LA NECESITAMOS
+
 /**
  *
  * @author Pedro Mendoza
- */
+ 
 public class OperacionesAderezo {
     
     public static void anadirAderezoHelado(Helado helado,Aderezo aderezo){
@@ -32,3 +35,4 @@ public class OperacionesAderezo {
     }
     
 }
+*/

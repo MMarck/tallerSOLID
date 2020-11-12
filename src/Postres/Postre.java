@@ -23,6 +23,14 @@ public class Postre {
         return aderezos;
     }
     
+    public static void anadirAderezo(Postre postre,Aderezo aderezo){
+        postre.getAderezos().add(aderezo);
+    }
+    
+    public static void quitarAderezo(Postre postre,Aderezo aderezo){
+        postre.getAderezos().remove(aderezo);
+    }
+    
     @Override
     public String toString() {
     	String name = this.getClass().getName();

@@ -5,6 +5,8 @@
  */
 package Postres;
 
+import Adicionales.Aderezo;
+
 
 /**
  *
@@ -12,14 +14,22 @@ package Postres;
  */
 public class Pastel extends Postre{
 
-	public Pastel(String sabor) {
-		super(sabor, 15.55);
-		// TODO Auto-generated constructor stub
-	}
+    public Pastel(String sabor) {
+	super(sabor, 15.55);
+	// TODO Auto-generated constructor stub
+    }
+        
+    public static void anadirAderezo(Pastel pastel,Aderezo aderezo){
+        pastel.getAderezos().add(aderezo);
+    }
+    
+    public static void quitarAderezo(Pastel pastel,Aderezo aderezo){
+        pastel.getAderezos().remove(aderezo);
+    }
     
 	
-	//esta sobreescritura realmente no es necesaria
-	@Override
+    //esta sobreescritura realmente no es necesaria
+    @Override
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
