@@ -3,6 +3,7 @@
 ## INTEGRANTES:
 	-- Wesley Briones
 	-- Marck Murillo
+	-- Angie Flores
 
 # SOLID
 
